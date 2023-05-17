@@ -1,0 +1,120 @@
+/* #comm{
+  overflow-x: hidden;
+} */
+.subheading{
+    color: white;
+    }
+    /* top */
+    .subheading{
+        /* font-size: 3em !important; */
+        font-weight: bold;
+    }
+    /* animate subheading */
+    .subheading{
+        position: relative;
+        animation-name: slide-in;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+      }
+     
+      @keyframes slide-in {
+        from {
+          right: -100%;
+          opacity: 0;
+        }
+        to {
+          right: 0;
+          opacity: 1;
+        }
+      }
+      
+    .subheading span {
+      margin-right: 10px;
+      display: inline-block;
+      animation-name: appear;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+      animation-delay: calc(var(--i) * 0.4s);
+      }
+      @keyframes appear {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    
+    /* hero */
+    .bg-2 {
+      background-image: url("https://bit.ly/3L76Ekv");
+      height: 60vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      padding-bottom: 3em !important;
+      position: relative;
+      opacity: 0.8;
+    }
+    
+    .bg-2::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.1;
+    }
+    
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    
+    .overlay-text h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    
+    .overlay-text p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      margin-top: 10rem;
+      
+    }
+    
+    #alumni-detail{
+      font-size: 3em;
+      font-weight: bold;
+      padding-bottom: 2em;
+    }
+    
+    /* scrollspan */
+    .navbar{
+      box-shadow: none !important;
+    }
+    .row{
+      margin-top: 3em !important;
+    }
+    .col-3{
+      margin-right: 4em;
+    }
+    .col-8{
+      margin-left: 20%;
+      padding-bottom: 3em;
+    }
+  
+  /* video responsiveness */
+  iframe{
+    /* width: 100%; */
+    height: 450px;
+    /* margin-left: 5em; */
+  }
+  
